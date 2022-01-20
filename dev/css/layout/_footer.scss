@@ -1,0 +1,111 @@
+.footer {
+    padding-top: 40px;
+    background-color: #222222;
+    .wrapper-foot {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2em;
+        >div{
+            h2{
+                color: #fff;
+                text-transform: uppercase;
+            }
+            p{
+                color: #999;
+                font-size: 0.8em;
+            }
+            &:nth-of-type(1),&:nth-of-type(2){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            &:nth-of-type(2){
+                a {
+                    color: red;
+                    text-decoration: none;
+                }
+                .twit-before{
+                    color: #fff;
+                    &:after{
+                        content: '@colorlib';
+                        color: red;
+                        padding-left: 10px;
+                    }
+                }
+                blockquote{
+                    padding: 0;
+                    margin: 0;
+                    color: #555;
+                    font-size: 0.75em;
+                }
+            }
+            &:nth-of-type(3){
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 50px 1fr 1fr 1fr ;
+                gap: 0.5em;
+                h2 {
+                    grid-column: span 4;
+                }
+                >a {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    &:nth-of-type(1){
+                        background: url(../img/photo-gallery-01.jpg) center/cover;
+                    }
+                    &:nth-of-type(2){
+                        background: url(../img/photo-gallery-02.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(3){
+                        background: url(../img/photo-gallery-03.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(4){
+                        background: url(../img/photo-gallery-04.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(5){
+                        background: url(../img/photo-gallery-05.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(6){
+                        background: url(../img/photo-gallery-06.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(7){
+                        background: url(../img/photo-gallery-07.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(8){
+                        background: url(../img/photo-gallery-08.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(9){
+                        background: url(../img/photo-gallery-09.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(10){
+                        background: url(../img/photo-gallery-10.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(11){
+                        background: url(../img/photo-gallery-11.jpg) center/cover;
+                        
+                    }
+                    &:nth-of-type(12){
+                        background: url(../img/photo-gallery-12.jpg) center/cover;
+                    }
+                }
+            }
+        }
+    }
+    .footer-nav{
+        background-color: red;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
