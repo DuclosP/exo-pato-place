@@ -1,0 +1,72 @@
+.aside {
+    width: 400px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    .aside-container{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .cross{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            align-self: flex-end;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+                div{
+                    background-color: red;
+                    transition: 0.2s all ease-in-out;
+                }
+            }
+            div{
+                position: absolute;
+                background-color: #000;
+                width: 25px;
+                height: 2px;
+                &:first-of-type{
+                    transform: rotate(45deg);
+                }
+                &:last-of-type{
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .aside-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 50px;
+            a{
+                line-height: 3;
+                font-size: 0.9em;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #000;
+                &:hover{
+                    color: red;
+                }
+                
+            }
+        }
+        .btn{
+            margin-top: 40px;
+            background-color: #000;
+            color: #fff;
+            font-size: 1em;
+
+        }
+    }
+    display: none;
+}
