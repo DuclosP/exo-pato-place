@@ -1,0 +1,48 @@
+.main-blog {
+    h2, h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    >nav{
+            border-bottom: 1px solid pink;
+        
+    }
+    .container {
+        display: flex;
+        section {
+            padding-top: 80px;
+        }
+        .main-section{
+            width: 75%;
+            border-right: 1px pink solid;
+            padding-right: 50px;
+            article{
+                a{
+                    img{
+                        height: 100%;
+                    }
+                }
+                .blog-title{
+                    h2{
+                        font-size: 1.7em;
+                        font-weight: 400;
+                    }
+                    p{
+                        line-height: 1.8;
+                    }
+                    a{
+                        font-size: 0.9em;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                    }
+                }
+                padding-bottom: 80px;
+            }
+        }
+        .side-section{
+            width: 25%;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+}

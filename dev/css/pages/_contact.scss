@@ -1,5 +1,8 @@
-.main {
+.main-contact {
     background: #ECECEC;
+    h2 {
+        letter-spacing: 4px;
+    }
     .contact-container{
         .form-map {
             overflow: hidden;
@@ -17,14 +20,37 @@
                 grid-column: span 3;
                 textarea{
                     width: 100%;
-                    min-height: 200px;
+                    min-height: 250px;
                     resize: vertical;
                 }
             }
             .submit{
                 grid-column: span 3;
-                width: 25%;
+                width: 15%;
                 justify-self: center;
+            }
+        }
+        .content {
+            margin-top: 180px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            div{
+                display: grid;
+                grid-template-columns: 60px 1fr;
+                i{
+                    grid-row: span 2;
+                    font-size: 1.3em;
+
+                }
+                h2{
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-size: 1.3em;
+                }
+                p{
+                    font-size: 0.9em
+                }
             }
         }
     }

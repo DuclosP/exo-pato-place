@@ -5,14 +5,33 @@
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins', sans-serif;
 }
-
+p{
+    color: #666666;
+}
+a{
+    color: #222222;
+    text-decoration: none;
+}
+blockquote{
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    color: #666666;
+}
 .courgette {
     font-family: 'Courgette', cursive;
 }
 section {
     padding: 120px 0;
 }
-
+.arrow{
+    color: #222222;
+    text-decoration: none;
+    &:after{
+        content: "→" ;
+        margin-left: 20px;
+    }
+}
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;

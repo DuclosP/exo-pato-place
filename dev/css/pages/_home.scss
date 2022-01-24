@@ -22,19 +22,6 @@
             };
         }
     }
-    p{
-        color: #666666;
-    }
-    a{
-        color: #222222;
-        text-decoration: none;
-    }
-    .arrow{
-        &:after{
-            content: "→" ;
-            margin-left: 20px;
-        }
-    }
     // section italian restaurant
     .italian{
         background-color: #ECECEC;
