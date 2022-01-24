@@ -1,6 +1,6 @@
 .main-home {
     section {
-        padding: 80px 0;
+        padding: 120px 0;
     }
     h3{
         font-size: 1.5em;
@@ -207,30 +207,10 @@
             justify-items: center;
             align-items: center;
             .form-container{
-                width: 100%;
                 form{
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
                     gap: 2em;
-                    label{
-                        display: block;
-                    }
-                    input, select{
-                        width: 100%;
-                        height: 50px;
-                        border: 1px solid #dedede;
-                        border-radius: 10px;
-                        background-color: transparent;
-                        &:focus {
-                            outline: none;
-                            border: 2px solid red;
-                        }
-                    }
-                    .options {
-                        width:200px;
-                        padding:20px;
-                        height: 150px;
-                    }
                     .datum {
                         position: relative;
                         .calendar-ico{
@@ -247,14 +227,6 @@
                         grid-column: span 2;
                         width: 25%;
                         justify-self: center;
-                        .btn{
-                            background-color: #000;
-                            color: #fff;
-                            &:hover{
-                                background-color: red;
-                                transition: 0.5s ease all;
-                            }
-                        }
                     }
                 }
             }
@@ -304,9 +276,33 @@
     .sign{
         display: flex;
         justify-content: center;
-        align-items: center;
+        background: #F3F0F0;
         .sign-form{
-
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+            align-items: center;
+            column-gap: 20px;
+            label{
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-weight: 700;
+                font-size: 1.2em;
+                font-family: Poppins;
+                color: rgb(77, 77, 77);
+            }
+            a{
+                background: #000;
+                color: #fff;
+                &:hover{
+                    background: red;
+                    transition: 0.2s all ease;
+                }
+            }
+            .btn {
+                width: 80%;
+                text-align: center;
+            }
         }
     }
 }
