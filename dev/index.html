@@ -203,9 +203,10 @@
             <h2><span class="courgette">Reservation</span><br>Book table </h2>
           </div>
           <form action="" method="">
-            <div>
+            <div class="datum">
               <label for="date">Date</label>
               <input type="date" id="date" required>
+              <i class="calendar-ico"></i>
             </div>
             <div>
               <label for="name">Name</label>
@@ -260,7 +261,7 @@
               <label for="mail">Email</label>
               <input type="mail" id="mail" placeholder="email" required>
             </div>
-            <div><input type="submit"></div>
+            <div class="submit"><input type="submit" class="btn"></div>
           </form>
         </div>
         <div class="img">
@@ -271,18 +272,19 @@
       </div>
     </section>
     <!-- section customers -->
-    <section>
+    <section class="customers">
       <div class="wrapper">
         <div class="section-titre">
           <h2><span class="courgette">Customers Say</span><br>Review </h2>
         </div>
         <article>
           <div>
-            <a href="#"><img src="" alt=""></a>
+            <img src="img/avatar-04.jpg" alt="">
           </div>
           <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, eum dolorem laboriosam ad accusantium animi? Adipisci eos repellat, inventore voluptatum fuga vitae libero qui enim illum, neque, alias dolore minus?</p>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, eum dolorem laboriosam ad accusantium animi? Adipisci eos repellat, inventore"</p>
             <div class="stars">
+              ★★★★★
             </div>
             <blockquote>
               Pierre Duclos - Bruxelles Belgique
@@ -292,22 +294,24 @@
       </div>
     </section>
     <!-- section video pas a faire -->
-    <section>
+    <section class="our-video">
       <div class="wrapper">
         <div class="section-titre">
           <h2><span class="courgette">Discover </span><br>Our Video  </h2>
         </div>
       </div>
     </section>
-    <section>
+    <section class="latest-news">
+      
+      <div class="section-titre">
+        <h2><span class="courgette">Latest News  </span><br>The Blog </h2>
+      </div>
       <div class="wrapper">
-        <div class="section-titre">
-          <h2><span class="courgette">Latest News  </span><br>The Blog </h2>
-        </div>
-        <article>
-          <div class="img">
-            
-          </div>
+        <article>            
+          <a href="#">
+            <div class="img"><img src="img/intro-01.jpg" alt="">
+            </div>
+          </a>
           <div>
             <a href="#"><h3>Best Places for Wine </h3></a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros. </p>
@@ -315,9 +319,10 @@
           </div>
         </article>
         <article>
-          <div class="img">
-            
-          </div>
+          <a href="#">
+            <div class="img"><img src="img/intro-01.jpg" alt="">
+            </div>
+          </a>
           <div>
             <a href="#"><h3>Eggs and Cheese </h3></a>
             <p>Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat </p>
@@ -325,15 +330,25 @@
           </div>
         </article>
         <article>
-          <div class="img">
-            
-          </div>
+          <a href="#">
+            <div class="img"><img src="img/intro-01.jpg" alt="">
+            </div>
+          </a>
           <div>
             <a href="#"><h3>Style the Wedding Party </h3></a>
             <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum. </p>
             <a href="#" class="arrow">Continue Reading </a>
           </div>
         </article>
+      </div>
+    </section>
+    <section class="sign">
+      <div class="sign-form">
+        <label for="sign">Specials Sign up</label>
+        <div>
+          <input type="email" id="sign">
+        </div>
+        <a href="#" class="btn"></a>
       </div>
     </section>
   </main>

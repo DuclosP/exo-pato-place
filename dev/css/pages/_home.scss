@@ -12,11 +12,13 @@
             font-size: 3em;
             text-transform: uppercase;
             text-align: center;
+            letter-spacing: 10px;
             span {
                 color: red;
                 font-size: 1.8rem;
                 font-weight: 400;
                 text-transform:capitalize;
+                letter-spacing: 1px;
             };
         }
     }
@@ -47,10 +49,8 @@
             }
         }
     }
-    // section discover pato
+    // section discover pato et last-news
     .discover-pato{
-        padding: 0;
-        padding-bottom: 80px;
         .section-titre{
             background: url(../img/bg-intro-01.jpg) top/cover;
             background-attachment: fixed;
@@ -59,11 +59,26 @@
                 color: #fff;
             }
         }
+    }
+    .discover-pato, .latest-news{
+        padding: 0;
+        padding-bottom: 80px;
         .wrapper{
             padding-top: 80px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2em;
+            a{
+                &:hover{
+                    h3{
+                        color: red;
+                        transition: 0.2s ease all;
+                    }
+                }
+            }
+            p{
+                line-height: 2em;
+            }
         }
     }
     //section discover menu
@@ -178,6 +193,7 @@
     }
     //section formulaire de reservation
     .reservation{
+        background-color: #ECECEC;
         .wrapper{
             .img{
                 width: 400px;
@@ -191,6 +207,7 @@
             justify-items: center;
             align-items: center;
             .form-container{
+                width: 100%;
                 form{
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
@@ -200,24 +217,111 @@
                     }
                     input, select{
                         width: 100%;
+                        height: 50px;
+                        border: 1px solid #dedede;
+                        border-radius: 10px;
+                        background-color: transparent;
+                        &:focus {
+                            outline: none;
+                            border: 2px solid red;
+                        }
+                    }
+                    .options {
+                        width:200px;
+                        padding:20px;
+                        height: 150px;
+                    }
+                    .datum {
+                        position: relative;
+                        .calendar-ico{
+                            position: absolute;
+                            height: 25px;
+                            width: 25px;
+                            right: 10px;
+                            top: 30px;
+                            background: url(../../img/8c136a4f513f3744e05fd5c4431845fe.jpg) center/cover;
+                            z-index: -1;
+                        }
+                    }
+                    .submit{
+                        grid-column: span 2;
+                        width: 25%;
+                        justify-self: center;
+                        .btn{
+                            background-color: #000;
+                            color: #fff;
+                            &:hover{
+                                background-color: red;
+                                transition: 0.5s ease all;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    //regle générale pour les images en html de la page home
-    .img{
-        width: 100%;
-        border-radius: 20px;
-        overflow: hidden;
-        img{
-            width: 100%;
-            height: 250px;
-            transition: 1s ease all;
-            &:hover{
-                transform: scale(1.2);
-                transition: 1s ease all;
+    //section customers
+    .customers{
+        article {
+            div {
+                text-align: center;
+                &:first-child{
+                    img {
+                        height: 120px;
+                        clip-path: circle(50%);
+                        border: 4px solid red;
+                        border-radius: 50%;
+                    }
+                }
+                &:last-child{
+                    font-size: 1.1em;
+                    padding: 0 150px;
+                    .stars{
+                        font-size: 2em;
+                        color: red;
+                        padding-bottom: 20px;
+                    }
+                    blockquote{
+                        font-size: 0.9em;
+                        color: rgb(24, 24, 24);
+                    }
+                }
             }
+        }
+    }
+    //section video
+    .our-video{
+        height: 600px;
+        background: url(../../img/bg-intro-04.jpg) fixed;
+        display: flex;
+        align-items: center;
+        .section-titre{
+            color: #fff;
+        }
+    }
+
+    //section sign
+    .sign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sign-form{
+
+        }
+    }
+}
+//regle générale pour les images en html de la page home
+.img{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 250px;
+        transition: 1s ease all;
+        &:hover{
+            transform: scale(1.2);
+            transition: 1s ease all;
         }
     }
 }
