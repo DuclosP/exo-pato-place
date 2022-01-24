@@ -111,6 +111,11 @@
     //section events
     .events{
         background: url(../img/bg-event-01.jpg) center/cover;
+        .section-titre{
+            h2{
+                color: #fff;
+            }
+        }
         .wrapper {
             article{
                 background-color: #fff;
@@ -118,11 +123,6 @@
                 overflow: hidden;
                 display: grid;
                 grid-template-columns: repeat(2,50%);
-                .section-titre{
-                    h2{
-                        color: #fff;
-                    }
-                }
                 .img-event{
                     position: relative;
                     a{
