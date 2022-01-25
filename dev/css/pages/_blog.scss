@@ -102,20 +102,82 @@
                 display: flex;
                 flex-direction: column;
                 a{
-                    padding: 20px 0;
+                    padding: 18px 0;
                     border-top: 1px solid #dedede;
                     border-bottom: 1px solid #dedede;
                     text-transform: uppercase;
                     font-size: 0.9em;
                     letter-spacing: 1.5px;
+                    &:hover {
+                        color: red;
+                    }
                 }
             }
             .pop{
                 .pop-box{
                     display: flex;
                     justify-content: flex-start;
+                    margin: 20px 0;
                     .images{
-                        width: 100%;
+                        width: 80px;
+                        height: 80px;
+                        padding: 0;
+                        border-radius: 10px;
+                    }
+                    &:nth-of-type(1){
+                        .images{
+                            background: url(../img/blog-02.jpg) center/cover;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        .images{
+                            background: url(../img/blog-06.jpg) center/cover;
+                        }
+                    }
+                    &:nth-of-type(3){
+                        .images{
+                            background: url(../img/blog-08.jpg) center/cover;
+                        }
+                    }
+                    &:nth-of-type(4){
+                        .images{
+                            background: url(../img/blog-10.jpg) center/cover;
+                        }
+                    }
+                    &:nth-of-type(5){
+                        .images{
+                            background: url(../img/blog-06.jpg) center/cover;
+                        }
+                    }
+                    div{
+                        &:last-child{
+                            width: 70%;
+                            padding: 0 0 0 20px;
+                            h4{
+                                margin: 0;
+                                text-transform: uppercase;
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+            .archives {
+                table{
+                    width: 100%;
+                    tr{
+                        display: flex;
+                        justify-content: space-between;
+                        text-transform: uppercase;
+                        font-size: 0.8em;
+                        td{
+                            margin: 10px 0;
+                            a{
+                                &:hover{
+                                    color:red;
+                                }
+                            }
+                        }
                     }
                 }
             }

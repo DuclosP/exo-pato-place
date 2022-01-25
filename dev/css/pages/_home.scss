@@ -201,14 +201,11 @@
                     .datum {
                         position: relative;
                         .calendar-ico{
-                            position: absolute;
-                            height: 25px;
-                            width: 25px;
-                            right: 10px;
-                            top: 30px;
-                            background: url(../../img/8c136a4f513f3744e05fd5c4431845fe.jpg) center/cover;
-                            z-index: -1;
+
                         }
+                    }
+                    select {
+                        background: #fff;
                     }
                     .submit{
                         grid-column: span 2;
