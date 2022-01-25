@@ -4,8 +4,7 @@
         text-transform: uppercase;
     }
     >nav{
-            border-bottom: 1px solid pink;
-        
+        border-bottom: 1px solid #dedede;   
     }
     .container {
         display: flex;
@@ -14,12 +13,36 @@
         }
         .main-section{
             width: 75%;
-            border-right: 1px pink solid;
+            border-right: 1px #dedede solid;
             padding-right: 50px;
             article{
                 a{
+                    position: relative;
                     img{
                         height: 100%;
+                    }
+                    .red-date-box{
+                        position: absolute;
+                        top: 35px;
+                        left: 25px;
+                        background-color: red;
+                        width: 75px;
+                        height: 82px;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        span {
+                            padding: 0 5px;
+                            &:first-child{
+                                font-size: 2em;
+                            }
+                            &:last-child{
+                                font-size: 0.8em;
+                            }
+                        }
                     }
                 }
                 .blog-title{
@@ -31,7 +54,7 @@
                         line-height: 1.8;
                     }
                     a{
-                        font-size: 0.9em;
+                        font-size: 0.8em;
                         text-transform: uppercase;
                         letter-spacing: 1.5px;
                     }
@@ -41,8 +64,61 @@
         }
         .side-section{
             width: 25%;
-            padding-right: 50px;
             padding-left: 50px;
+            .form-container{
+                position: relative;
+                input{
+                    border-radius: 0;
+                }
+                button{
+                    position: absolute;
+                    padding: 0;
+                    right: 2px;
+                    top: 2px;
+                    height: 46px;
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0;
+                    border: none;
+                    background-color: #000;
+                    i{
+                        font-size: 1em;
+                        color: #fff;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        i{
+                            color: red;
+                        }
+                    }
+                }
+            }
+            h3{
+                margin : 60px 0 40px 0;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                a{
+                    padding: 20px 0;
+                    border-top: 1px solid #dedede;
+                    border-bottom: 1px solid #dedede;
+                    text-transform: uppercase;
+                    font-size: 0.9em;
+                    letter-spacing: 1.5px;
+                }
+            }
+            .pop{
+                .pop-box{
+                    display: flex;
+                    justify-content: flex-start;
+                    .images{
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
-}
+}    

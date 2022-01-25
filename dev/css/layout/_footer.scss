@@ -104,23 +104,4 @@
             }
         }
     }
-    .footer-nav{
-        padding: 20px 0;
-        background-color: #111111;
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #999;
-            a{
-                color: rgb(107, 107, 107);
-                text-decoration: none;
-                &:hover{
-                    color: red;
-                }
-            }
-
-        }
-            
-    }
 }
