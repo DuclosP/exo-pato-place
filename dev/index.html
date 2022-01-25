@@ -34,7 +34,7 @@
   <header id="header" class="header hero">
     <div class="nav-bg">
       <nav class="header-nav wrapper">
-        <a href="#"><img src="img/logo.png" alt=""></a>
+        <a href="#"><img id="logo" src="img/logo.png" alt=""></a>
         <div class="c-nav">
           <a href="#">home</a>
           <a href="#">menu</a>
@@ -209,7 +209,7 @@
             <div class="datum">
               <label for="date">Date</label>
               <input type="date" id="date" required>
-              <i class="calendar-ico"></i>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
             </div>
             <div>
               <label for="name">Name</label>
@@ -348,8 +348,9 @@
     <section class="sign">
       <div class="sign-form form-container">
         <label for="sign">Specials Sign up</label>
-        <div>
+        <div class="form-container">
           <input type="email" id="sign" placeholder="email" required>
+          <button><i class="fa fa-envelope" aria-hidden="true"></i></button>
         </div>
         <a href="#" class="btn">sign-up</a>
       </div>

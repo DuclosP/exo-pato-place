@@ -33,6 +33,9 @@ section {
         content: "→" ;
         margin-left: 20px;
     }
+    &:hover{
+        color: red;
+    }
 }
 .wrapper {
     max-width: 1200px;
@@ -45,6 +48,9 @@ section {
     i{
         color: #fff;
         font-size: 1.4em;
+        &:hover{
+            color:red;
+        }
     }
 }
 .sandwich{
@@ -72,10 +78,35 @@ section {
 }
 //règle générale pour les formu
 .form-container{
+    position: relative;
     label{
         display: block;
         color: #666666;
         padding: 10px 0;
+    }
+    button{
+        position: absolute;
+        padding: 0;
+        right: 2px;
+        top: 2px;
+        height: 46px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        border: none;
+        background-color: #000;
+        i{
+            font-size: 1em;
+            color: #fff;
+        }
+        &:hover{
+            cursor: pointer;
+            i{
+                color: red;
+            }
+        }
     }
     input, select, textarea{
         width: 100%;
@@ -111,6 +142,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
     a{
         line-height: 0;
         i{
@@ -123,4 +155,7 @@ section {
             }
         }
     }
+}
+.sticky{
+    opacity: 1;
 }

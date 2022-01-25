@@ -200,8 +200,11 @@
                     gap: 2em;
                     .datum {
                         position: relative;
-                        .calendar-ico{
-
+                        i{
+                            position: absolute;
+                            top: 45px;
+                            right: 10px;
+                            font-size: 1.8em;
                         }
                     }
                     select {
@@ -287,6 +290,14 @@
                 width: 80%;
                 text-align: center;
             }
+            .form-container{
+                button{
+                    background: transparent;
+                    i{
+                        color: #000;
+                    }
+                }
+            }
         }
     }
 }
@@ -305,3 +316,12 @@
         }
     }
 }
+.scrollable{
+    overflow: auto;
+    width: 70px; /* adjust this width depending to amount of text to display */
+    height: 80px; /* adjust height depending on number of options to display */
+    border: 1px silver solid;
+  }
+  .scrollable select{
+    border: none;
+  }
