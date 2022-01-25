@@ -34,6 +34,16 @@
             .img{
                 width: 65%;
             }
+            @media  screen and (max-width:790px) {
+                grid-template-columns: 1fr; 
+                .img{
+                    margin-top: 30px;
+                    width: 65%;
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
         }
     }
     // section discover pato et last-news
@@ -66,6 +76,13 @@
             p{
                 line-height: 2em;
             }
+            @media  screen and (max-width:790px) {
+                grid-template-columns: 1fr;
+                margin: 20px;
+                img{
+                    height: 100%;
+                }
+            }
         }
     }
     //section discover menu
@@ -78,7 +95,7 @@
             "a b ."
             "c c ."
             ;
-            grid-template-rows:250px 250px 250px;
+            grid-auto-rows: 250px;
             gap: 2em;
             article {
                 position: relative;
@@ -107,7 +124,41 @@
                     grid-area: c;
                 }
             }
-            
+            @media  screen and (max-width:790px) {
+                margin: 20px;
+                grid-template-areas: 
+                "a b"
+                "a b"
+                "c c"
+                ". ."
+                ". ."
+                ". ."
+                ;
+                grid-auto-rows: 200px;
+                article{
+                    &:nth-of-type(1){
+                        grid-area: b;
+                    }
+                    &:nth-of-type(2){
+                        grid-area: a;
+                    }
+                    &:nth-of-type(5){
+                        grid-area: c;
+                    }
+                    &:nth-of-type(3){
+                        grid-column: span 2;
+                        grid-row: span 2;
+                    }
+                    &:nth-of-type(4){
+                        grid-column: span 2;
+                        grid-row: span 2;
+                    }
+                    &:nth-of-type(6){
+                        grid-column: span 2;
+                        grid-row: span 2;
+                    }
+                }
+            }
         }
     }
     //section events
@@ -175,6 +226,18 @@
                         }
                     }
                 }
+                @media  screen and (max-width:790px) {
+                    margin: 60px;
+                    grid-template-columns: 1fr;
+                    .img-event{
+                        div{
+                            transform: none;
+                            top: 0;
+                            left: 0;
+                            height: 40px
+                        }
+                    }
+                }
             }
         }
     }
@@ -186,7 +249,7 @@
                 width: 400px;
                 img{
                     height: 400px;
-                    object-fit: cover;
+                    
                 }
             }
             display: grid;
@@ -214,6 +277,26 @@
                         grid-column: span 2;
                         width: 25%;
                         justify-self: center;
+                    }
+                }
+            }
+            @media  screen and (max-width:790px) {
+                display: block;
+                margin: 20px;
+                .form-container{
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        .submit{
+                            align-self: center;
+                        }
+                    }
+                }
+                .img{
+                    width: 400px;
+                    margin: 40px auto;
+                    img{
+                        height: 400px;
                     }
                 }
             }
@@ -258,7 +341,7 @@
             color: #fff;
         }
     }
-
+    
     //section sign
     .sign{
         display: flex;
@@ -298,6 +381,13 @@
                     }
                 }
             }
+            @media  screen and (max-width:790px) {
+                margin: 20px;
+                grid-template-columns: 1fr;
+                >* {
+                    margin: 20px;
+                }
+            }
         }
     }
 }
@@ -316,12 +406,3 @@
         }
     }
 }
-.scrollable{
-    overflow: auto;
-    width: 70px; /* adjust this width depending to amount of text to display */
-    height: 80px; /* adjust height depending on number of options to display */
-    border: 1px silver solid;
-  }
-  .scrollable select{
-    border: none;
-  }

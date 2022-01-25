@@ -4,6 +4,7 @@
         letter-spacing: 4px;
     }
     .contact-container{
+        
         .form-map {
             overflow: hidden;
             border-radius: 10px;
@@ -50,6 +51,27 @@
                 }
                 p{
                     font-size: 0.9em
+                }
+            }
+        }
+        @media  screen and (max-width:790px) {
+            margin: 0 20px;
+            .form-container{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .submit{
+                    width: 200px;
+                    align-self: center;
+                }
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div{
+                    width: 50%;
                 }
             }
         }
