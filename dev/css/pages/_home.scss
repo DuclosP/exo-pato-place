@@ -257,6 +257,7 @@
             justify-items: center;
             align-items: center;
             .form-container{
+                width: 100%;
                 form{
                     display: grid;
                     grid-template-columns: repeat(2,1fr);

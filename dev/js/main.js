@@ -29,3 +29,37 @@ window.addEventListener('scroll', () => {
         logo.setAttribute("src", "/img/logo.png")
     }
 })
+
+//test pour les <section>
+
+let div1 = document.querySelectorAll(".div1 div");
+let div2 = document.querySelectorAll(".div2 div");
+let menu = document.querySelectorAll(".fa-caret-up");
+let selectMenu = document.querySelectorAll(".select-menu");
+let input = document.querySelectorAll(".selection");
+
+//ajouter une valeur de la liste
+div1.forEach(element => {
+    element.addEventListener("click" , () => {
+        input[0].value = element.textContent;
+    })
+});
+div2.forEach(element => {
+    element.addEventListener("click" , () => {
+        input[1].value = element.textContent;
+    })
+});
+//pour afficher/cacher le menu déroulant
+function openClose(e, f) {
+    e.addEventListener("click", () => {
+        selectMenu[f].classList.toggle("show");
+        menu[f].classList.toggle("rotate");
+    })
+}
+for(let i =0; i<menu.length; i++){
+    openClose(menu[i], i);
+    openClose(input[i], i);
+    openClose(selectMenu[i], i);
+}
+
+

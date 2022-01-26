@@ -1,0 +1,41 @@
+.select{
+    position: relative;
+
+    .select-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        height: 200px;
+        overflow-y: scroll;
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        div{
+            padding: 5px 2px;
+            color: #666666;
+            &:hover{
+                background-color: red;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        display: none;
+    }
+    .show {
+        display: flex;
+    }
+    i{
+        position: absolute;
+        right: 25px;
+        top: 55px;
+        color: #666666;
+        transform: rotate(180deg);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .rotate {
+        transform: rotate(0);
+    }
+}
