@@ -1,4 +1,6 @@
+//-------------//
 //pour le menu burger
+//-------------//
 let aside = document.querySelector(".aside");
 let btn = document.querySelectorAll(".btn-menu")
 
@@ -7,7 +9,9 @@ btn.forEach(element => {
         aside.classList.toggle("apparition")
     } )
 });
+//-------------//
 //le sticky
+//-------------//
 let nav = document.querySelector(".nav-bg");
 let ancre = document.querySelector(".anchor-menu");
 let logo = document.getElementById('logo');
@@ -29,9 +33,9 @@ window.addEventListener('scroll', () => {
         logo.setAttribute("src", "/img/logo.png")
     }
 })
-
-//test pour les <section>
-
+//-------------//
+//select custom
+//-------------//
 let div1 = document.querySelectorAll(".div1 div");
 let div2 = document.querySelectorAll(".div2 div");
 let menu = document.querySelectorAll(".fa-caret-up");
@@ -62,4 +66,13 @@ for(let i =0; i<menu.length; i++){
     openClose(selectMenu[i], i);
 }
 
+//-------------//
+// fake load //
+//-------------//
+
+let load = document.querySelector(".loader");
+
+setInterval( () => {
+    load.style.display = "none"
+}, 500)
 
